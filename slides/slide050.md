@@ -1,17 +1,26 @@
-# Hands on Exercise: Summarize All Patterns
+# Chaining Commands - Loops
 
-```bash
-# Loop through all patterns
-for pattern in $(fabric -l); do echo "--> "$pattern; done
+## Bash For Loops
 
-for pattern in $(fabric -l); do 
-    echo -e "\n## "$pattern | tee -a summaries.md;
-    fabric -p $pattern --dry-run | fabric -p summarize_prompt | tee -a summaries.md;
-done
-```
+- Iterate over lists, ranges, or command output
+- Basic syntax:
+  ```bash
+  for item in list; do
+      command $item
+  done
+  ```
+- Examples:
+  ```bash
+  # Loop over numbers
+  for i in {1..5}; do echo $i; done
 
-Protip: Ask AI to explain commplicated CLI commands
+  # Loop over files
+  for file in *.txt; do cat $file; done
 
-Note the use of append mode `tee -a` to add to the file.
+  # Loop over command output
+  for user in $(who | cut -d' ' -f1); do
+      echo "Hello $user"
+  done
+  ```
 
 --- 

@@ -1,12 +1,12 @@
-# Using Fabric Patterns Effectively
+# Understanding Fabric Sessions
 
-## Best Practices
+- When you use the `--session=` parameter, Fabric will use the session file to store the conversation history.
+- This will either create a new session or continue an existing session.
+- The session file is stored in the `~/.config/fabric/sessions` directory.
+- Use `-X` or `--listsessions` to list the sessions.
+- Use `-W` or `--wipesession=` to delete a session.
+- To print the session, use `--printsession`.
+- Output the entire session to the output file using `--output-session`.
+- Specify the output file using  `-o` or `--output`. 
 
-- Examine the contents of the pattern
-- Choose the right pattern for your use case
-- Understand pattern inputs and outputs
-- Test patterns with sample data first
-- Document any customizations you make
-- Share successful patterns with the community
-
---- 
+---

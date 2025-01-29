@@ -1,14 +1,16 @@
-# Configuring Your Environment
+# Understanding GitHub Codespaces
 
-1. Once your Codespace loads, create a `.env` file:
-```bash
-cp .env-example .env
-```
+## What is Codespaces?
+- Cloud-based development environment
+- Full VS Code in your browser
+- Pre-configured development container
+- Accessible from anywhere
 
-2. Edit the `.env` file to add your API keys:
-```bash
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-...
-``` 
+## Key Benefits
+- No local setup required
+- Consistent environment
+- Integrated with GitHub
+- Full terminal access
+- Extensions pre-installed
 
----
+--- 

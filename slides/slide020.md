@@ -1,18 +1,16 @@
-# Understanding the `context` Parameter
+# LLM Hallucinations
 
-- Context files tell the AI how to respond to best meet your needs.
-- Fabric expects the files to be in the `~/.config/fabric/contexts` directory.
-- Use `-C` or `--context` to specify the context file.
-- use `-x` to list the context files.
+## What are Hallucinations?
 
-## Move the files and try them out:
+- When LLMs generate false or made-up information
+- Can appear convincing but be completely incorrect
+- A significant challenge in AI safety and reliability
 
-```
-cp context-*.md ~/.config/fabric/contexts/  
+## Common Types of Hallucinations
 
-echo "explain the CIA Traid" | fabric -C context-expert.md -p raw_query
+- Fabricating facts, statistics, or references
+- Creating non-existent citations or sources
+- Inventing technical details or procedures
+- Mixing up or combining unrelated information
 
-echo "explain the CIA Traid" | fabric -C context-layperson.md -p raw_query
-```
-
---- 
+---

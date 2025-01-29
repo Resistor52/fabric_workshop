@@ -1,16 +1,14 @@
-# Contact Information
+# Getting Help & The FabricCommunity
 
-## Lucid Truth LLC
-- Website: [LucidTruthTechnologies.com](https://lucidtruthtechnologies.com)
-- Email: ken@lucid-truth.com
-- Twitter/X: [@kennethghartman](https://twitter.com/kennethghartman)
-- LinkedIn: [@kennethghartman](https://www.linkedin.com/in/kennethghartman/)
-- Subscribe to our newsletter at the bottom of the [Lucid Truth Technologies Blog](https://lucidtruthtechnologies.com/digital-forensics-expert-blog/) page.
+## Stay Connected to the Fabric Project
 
-## Workshop Materials
-- Slides and code available at: [github.com/Resistor52/fabric-workshop](https://github.com/Resistor52/fabric-workshop)
-- Fabric Learning Environment: [github.com/Resistor52/fabric-course-vm](https://github.com/Resistor52/fabric-course-vm)
-- Fabric on Codespaces: [github.com/Resistor52/fabric-on-codespaces](https://github.com/Resistor52/fabric-on-codespaces)
+- [Fabric Intro Video](https://youtu.be/wPEyyigh10g)
+- Follow [@danielmiessler](https://x.com/danielmiessler) on Twitter/X
+- Learn more at [danielmiessler.com/](https://danielmiessler.com/)
 
+## Contributing to Fabric
+
+- How to [report issues or get help](https://github.com/danielmiessler/fabric/issues)   
+- [Contributing guidelines](https://opensource.guide/)
 
 ---

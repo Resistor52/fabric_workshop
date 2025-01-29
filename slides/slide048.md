@@ -1,26 +1,19 @@
-# Chaining Commands - Loops
+# Creating Custom Patterns
 
-## Bash For Loops
+## Example: AWS CloudTrail Analysis Pattern
 
-- Iterate over lists, ranges, or command output
-- Basic syntax:
-  ```bash
-  for item in list; do
-      command $item
-  done
-  ```
-- Examples:
-  ```bash
-  # Loop over numbers
-  for i in {1..5}; do echo $i; done
+```bash
+# Set up pattern directory
+export PATTERN_DIR="$HOME/.config/fabric/patterns"
+mkdir -p $PATTERN_DIR/analyze_aws_cloudtrail
 
-  # Loop over files
-  for file in *.txt; do cat $file; done
+# Create the pattern
+echo "Analyzing AWS CloudTrail logs that identifies privilege escalation attempts" | fabric -p create_pattern | tee $PATTERN_DIR/analyze_aws_cloudtrail/system.md
 
-  # Loop over command output
-  for user in $(who | cut -d' ' -f1); do
-      echo "Hello $user"
-  done
-  ```
+# Inspect the pattern
+cat $PATTERN_DIR/analyze_aws_cloudtrail/system.md
 
+# Test the pattern
+cat cloudtrail.log | fabric -p analyze_aws_cloudtrail
+```
 --- 

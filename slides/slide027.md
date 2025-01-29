@@ -1,17 +1,17 @@
-# Setting Up Fabric in Codespaces
+# The Fabric Repository
 
-## Quick Start
-1. Navigate to [fabric_on_codespace](https://github.com/Resistor52/fabric_on_codespaces) repository
-2. Click "Code" button
-3. Select "Open with Codespaces"
-4. Choose machine type
+## Repository Overview
+[github.com/danielmiessler/fabric](https://github.com/danielmiessler/fabric)
 
-## Environment Features
-- Fabric pre-installed
-- Required dependencies ready
-- Pattern directories configured
-- Github authentication handled
+## Key Components
+- `/patterns`: AI prompt templates
+- `README.md`: Getting started guide
+- Commit History
 
-> NOTE: In Codespaces you must provide your own API keys for Fabric.
+## Community Features
+- Issues: Bug reports and feature requests
+- Discussions: Community interaction
+- Pull Requests: Contribute improvements
+- Stars: ⭐️ Show support
 
 ---

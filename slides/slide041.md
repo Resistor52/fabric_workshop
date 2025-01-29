@@ -1,17 +1,21 @@
-# Getting Hands-on with Fabric
+# Defining Output Instructions
 
-## Key Use Cases
+## Essential Elements
 
-- Document Analysis & Claims Extraction
-- Security Log Analysis
-- Incident Response
-- Code Review & Documentation
-- Threat Analysis & Reporting
+- Specify output format (Markdown, JSON, etc.)
+- Define structure and hierarchy
+- Include formatting rules
+- Provide validation criteria
+- Set quality standards
 
-## Why These Examples?
-- Real-world applications
-- Common security workflows
-- Demonstrate pattern flexibility
-- Show practical value
+## Example Output Section
+```markdown
+# OUTPUT INSTRUCTIONS
+- Output must be in Markdown format
+- Use H2 for main findings
+- List each incident with timestamp
+- Include severity rating (High/Medium/Low)
+- Ensure all IPs are properly formatted
+```
 
 --- 

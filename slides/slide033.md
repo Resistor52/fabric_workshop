@@ -1,20 +1,18 @@
-# Balancing Precision & Flexibility
+# Prompts Deep Dive: Crafting Effective Prompts
 
-## Finding the Sweet Spot
+## Key Elements
 
-- Be precise enough to get desired results
-- Leave room for LLM's capabilities
-- Avoid over-constraining the response
-- Allow for creative solutions
-- Use guardrails when needed
+- Be clear and specific in your instructions
+- Break complex tasks into smaller steps
+- Include relevant context and constraints
+- Use consistent formatting and structure
+- Specify the desired output format
 
 ## Example
 ```bash
-# Too rigid
-echo "Write exactly 5 bullet points about security" | fabric -p ai
+# Less effective
+echo "analyze this: $(cat document.txt)" | fabric -p ai
 
-# Better balance
-echo "Write a concise security analysis focusing on key risks. Use bullet points." | fabric -p ai
+# More effective
+echo "analyze this technical document and highlight security implications: $(cat document.txt) " | fabric -p ai
 ```
-
---- 

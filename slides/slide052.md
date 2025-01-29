@@ -1,18 +1,17 @@
-# Resources for Further Learning
+# Hands on Exercise: Summarize All Patterns
 
-## Documentation & Repositories
+```bash
+# Loop through all patterns
+for pattern in $(fabric -l); do echo "--> "$pattern; done
 
-- [Fabric GitHub Repository](https://github.com/danielmiessler/fabric)
-- [Fabric Documentation](https://github.com/danielmiessler/fabric/blob/main/README.md)
-- [VS Code Command Line Tools](https://code.visualstudio.com/docs/terminal/basics)
+for pattern in $(fabric -l); do 
+    echo -e "\n## "$pattern | tee -a summaries.md;
+    fabric -p $pattern --dry-run | fabric -p summarize_prompt | tee -a summaries.md;
+done
+```
 
-## CLI Learning Resources
+Protip: Ask AI to explain commplicated CLI commands
 
-- [Tips for success with Command Line Interfaces using BASH](https://headintheclouds.site/episodes/episode5)
-- [Slice and Dice Data using grep, head, tail, cut, sort, tr, uniq and wc](https://headintheclouds.site/episodes/episode6)  
-- [explainshell.com](https://explainshell.com/) - Decode command-line arguments
-- [commandlinefu.com](https://commandlinefu.com/) - Community-driven command-line tips
-- [ss64.com](https://ss64.com/) - Command line reference
-- [Learn Shell](https://learnshell.org/) - Learn Shell
+Note the use of append mode `tee -a` to add to the file.
 
 --- 

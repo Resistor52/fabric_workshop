@@ -1,16 +1,19 @@
-# Understanding GitHub Codespaces
+# Git & GitHub Essentials
 
-## What is Codespaces?
-- Cloud-based development environment
-- Full VS Code in your browser
-- Pre-configured development container
-- Accessible from anywhere
+## Version Control Basics
+- Git tracks changes in your code over time
+- Enables collaboration between developers
+- Maintains history of all modifications
+- Track who changed what and when
+- Revert to previous versions
 
-## Key Benefits
-- No local setup required
-- Consistent environment
-- Integrated with GitHub
-- Full terminal access
-- Extensions pre-installed
+## Key Git Commands
+```bash
+git clone    # Copy a repository
+git add      # Stage changes
+git commit   # Save changes
+git push     # Upload to GitHub
+git pull     # Download updates
+```
 
---- 
+---

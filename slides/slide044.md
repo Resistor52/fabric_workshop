@@ -1,18 +1,18 @@
-# Threat Analysis & Reporting
+# Document Analysis Examples
 
-## Key Patterns
-- `analyze_threat_report`
-- `analyze_threat_report_trends`
-- `create_stride_threat_model`
-- `create_network_threat_landscape`
+## Useful Patterns
+- `analyze_claims`
+- `extract_extraordinary_claims`
+- `extract_insights`
+- `create_cyber_summary`
 
 ## Example Usage
 ```bash
-# Analyze a threat report
-cat threat_report.md | fabric -p analyze_threat_report_trends
+# Extract key claims from a document
+cat threat_report.md | fabric -p analyze_claims
 
-# Create threat model
-cat architecture.md | fabric -p create_stride_threat_model
+# Create a cybersecurity summary
+cat advisory.md | fabric -p create_cyber_summary
 ```
 
 --- 

@@ -1,17 +1,21 @@
-# Creating Complete Patterns
+# Structuring Pattern Steps
 
-## Pattern Development Workflow
+## Best Practices
 
-1. Define the AI's role clearly
-2. Break down the task into steps
-3. Specify output requirements
-4. Include example inputs/outputs
-5. Test and refine
+- Break down complex tasks
+- Use sequential, logical order
+- Make steps atomic and clear
+- Include validation points
+- Define expected outcomes
 
-## Tips for Success
-- Think step-by-step
-- Be explicit about requirements
-- Test with various inputs
-- Document pattern behavior
+## Example Steps Section
+```markdown
+# STEPS
+- Extract relevant log entries based on timestamp
+- Identify IP addresses and user agents
+- Compare against known threat patterns
+- Categorize severity of findings
+- Format results in specified structure
+```
 
 --- 

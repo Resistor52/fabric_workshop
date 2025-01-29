@@ -1,6 +1,14 @@
-# Codespaces Best Practices
+# Configuring Your Environment
 
-- Always use environment variables for API keys
-- Do not commit your `.env` file!
-- Keep your Codespace up to date (Commit any changes)
-- Remember to stop your Codespace when not in use to conserve resources
+1. Once your Codespace loads, create a `.env` file:
+```bash
+cp .env-example .env
+```
+
+2. Edit the `.env` file to add your API keys:
+```bash
+OPENAI_API_KEY=sk-...
+ANTHROPIC_API_KEY=sk-...
+``` 
+
+---

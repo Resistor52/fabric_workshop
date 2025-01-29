@@ -1,16 +1,18 @@
-# Understanding Fabric Patterns
+# Understanding the `context` Parameter
 
-## What are Fabric Patterns?
+- Context files tell the AI how to respond to best meet your needs.
+- Fabric expects the files to be in the `~/.config/fabric/contexts` directory.
+- Use `-C` or `--context` to specify the context file.
+- use `-x` to list the context files.
 
-- Pre-defined prompt templates that leverage LLMs for specific tasks
-- Building blocks for automating common workflows
-- Can be customized and extended for specific needs
-- Designed for reusability and consistency
+## Move the files and try them out:
 
-## Let'sExamine Some Patterns
+```
+cp context-*.md ~/.config/fabric/contexts/  
 
-- [summarize](https://github.com/danielmiessler/fabric/blob/main/patterns/summarize/system.md)
-- [extract_wisdom](https://github.com/danielmiessler/fabric/blob/main/patterns/extract_wisdom/system.md)
-- [analyze_logs](https://github.com/danielmiessler/fabric/blob/main/patterns/analyze_logs/system.md)
+echo "explain the CIA Traid" | fabric -C context-expert.md -p raw_query
 
----
+echo "explain the CIA Traid" | fabric -C context-layperson.md -p raw_query
+```
+
+--- 

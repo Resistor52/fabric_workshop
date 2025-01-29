@@ -1,18 +1,17 @@
-# Iterative Prompt Refinement
+# Understanding Context & Specificity
 
-## The Refinement Process
+## Context Matters
 
-- Start with a basic prompt and analyze the output quality
-- Identify areas for improvement
-- Adjust and test incrementally
+- Provide relevant background information
+- Define technical terms and acronyms
+- Specify the target audience
+- Include any necessary constraints
+- Set the scope of the analysis
 
 ## Example
 ```bash
-# Initial attempt
-echo "Check this log file: $(cat security.log)" | fabric -p ai
-
-# Refined version
-echo "Analyze this log file for failed login attempts, highlighting IP addresses and timestamp patterns: $(cat security.log)" | fabric -p ai
+# Adding context
+echo "Review this code from a GDPR compliance perspective, focusing on data privacy requirements for EU customers: $(cat my_script.py)" | fabric -p ai
 ```
 
 --- 

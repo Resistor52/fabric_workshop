@@ -1,19 +1,17 @@
-# Security Log Analysis
+# Getting Hands-on with Fabric
 
-## Relevant Patterns
-- `analyze_logs`
-- `analyze_incident`
-- `create_sigma_rules`
-- `extract_poc`
+## Key Use Cases
 
-## Example Usage
-```bash
-# Analyze security logs
-cat security.log | fabric -p analyze_logs
+- Document Analysis & Claims Extraction
+- Security Log Analysis
+- Incident Response
+- Code Review & Documentation
+- Threat Analysis & Reporting
 
-# Create detection rules
-cat incident.json | fabric -p create_sigma_rules
-```
-
+## Why These Examples?
+- Real-world applications
+- Common security workflows
+- Demonstrate pattern flexibility
+- Show practical value
 
 --- 

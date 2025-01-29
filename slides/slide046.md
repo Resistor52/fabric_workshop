@@ -1,19 +1,18 @@
-# Creating Custom Patterns
+# Threat Analysis & Reporting
 
-## Example: AWS CloudTrail Analysis Pattern
+## Key Patterns
+- `analyze_threat_report`
+- `analyze_threat_report_trends`
+- `create_stride_threat_model`
+- `create_network_threat_landscape`
 
+## Example Usage
 ```bash
-# Set up pattern directory
-export PATTERN_DIR="$HOME/.config/fabric/patterns"
-mkdir -p $PATTERN_DIR/analyze_aws_cloudtrail
+# Analyze a threat report
+cat threat_report.md | fabric -p analyze_threat_report_trends
 
-# Create the pattern
-echo "Analyzing AWS CloudTrail logs that identifies privilege escalation attempts" | fabric -p create_pattern | tee $PATTERN_DIR/analyze_aws_cloudtrail/system.md
-
-# Inspect the pattern
-cat $PATTERN_DIR/analyze_aws_cloudtrail/system.md
-
-# Test the pattern
-cat cloudtrail.log | fabric -p analyze_aws_cloudtrail
+# Create threat model
+cat architecture.md | fabric -p create_stride_threat_model
 ```
+
 --- 

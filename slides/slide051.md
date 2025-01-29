@@ -1,12 +1,14 @@
-# Q&A and Wrap-Up
+# Hands on Exercise: Summarize a Pattern
 
-## Key Takeaways
+```bash
+# Summarize the extract_wisdom pattern
+fabric p extract_wisdom --dry-run | fabric -p summarize_prompt > output.md
+cat output.md 
 
-- Fabric enhances CLI workflows with LLM capabilities
-- Command chaining multiplies tool effectiveness
-- Integration with VS Code and GitHub streamlines development
-- Security use cases demonstrate practical applications
+# Use `tee` to write to a file and stdout
+fabric -p extract_wisdom --dry-run | fabric -p summarize_prompt | tee output.md
+```
 
-## Questions?
+TIP: Try different models! (This works best with OpenAI GPT4o)
 
---- 
+---

@@ -1,14 +1,15 @@
-# Hands on Exercise: Summarize a Pattern
+# Chaining Commands to Exploit CLI Power
 
-```bash
-# Summarize the extract_wisdom pattern
-fabric p extract_wisdom --dry-run | fabric -p summarize_prompt > output.md
-cat output.md 
+## The Power of Unix Philosophy
+- Each program does one thing well
+- Programs work together
+- Programs handle text streams as universal interface
 
-# Use `tee` to write to a file and stdout
-fabric -p extract_wisdom --dry-run | fabric -p summarize_prompt | tee output.md
-```
+## Understanding Subshells
+- A subshell is a child process of the current shell
+- Created using `$()` or backticks `` ` ``
+- Example: `echo "Today is $(date)"`
+- Nested commands execute from innermost to outermost
+- Useful for command substitution and complex pipelines
 
-TIP: Try different models! (This works best with OpenAI GPT4o)
-
----
+--- 

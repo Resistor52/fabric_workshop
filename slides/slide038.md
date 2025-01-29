@@ -1,21 +1,17 @@
-# Structuring Pattern Steps
+# Patterns Deep Dive: Anatomy of a Fabric Pattern
 
-## Best Practices
+Fabric patterns ARE prompts
 
-- Break down complex tasks
-- Use sequential, logical order
-- Make steps atomic and clear
-- Include validation points
-- Define expected outcomes
+## Core Sections
 
-## Example Steps Section
-```markdown
-# STEPS
-- Extract relevant log entries based on timestamp
-- Identify IP addresses and user agents
-- Compare against known threat patterns
-- Categorize severity of findings
-- Format results in specified structure
-```
+- IDENTITY and PURPOSE: Defines the AI's role
+- STEPS: Clear instructions for task completion
+- OUTPUT INSTRUCTIONS: Formatting and structure rules
+- INPUT: The data to be processed (typically blank)
+
+## Why This Structure Matters
+- Creates consistent, reliable outputs
+- Makes patterns reusable and maintainable
+- Ensures clear communication with the LLM
 
 --- 

@@ -1,14 +1,18 @@
-# Workshop Feedback
+# Resources for Further Learning
 
-## Help Us Improve
-- Complete the feedback survey
-- Share your experience
-- Suggest improvements
-- Request future topics
+## Documentation & Repositories
 
-Feedback Survey: [FIX THIS LINK](https://forms.gle/2323232323232323)   
+- [Fabric GitHub Repository](https://github.com/danielmiessler/fabric)
+- [Fabric Documentation](https://github.com/danielmiessler/fabric/blob/main/README.md)
+- [VS Code Command Line Tools](https://code.visualstudio.com/docs/terminal/basics)
 
-## Thank You!
-Thank you for participating in the Mastering Fabric Workshop
+## CLI Learning Resources
 
----
+- [Tips for success with Command Line Interfaces using BASH](https://headintheclouds.site/episodes/episode5)
+- [Slice and Dice Data using grep, head, tail, cut, sort, tr, uniq and wc](https://headintheclouds.site/episodes/episode6)  
+- [explainshell.com](https://explainshell.com/) - Decode command-line arguments
+- [commandlinefu.com](https://commandlinefu.com/) - Community-driven command-line tips
+- [ss64.com](https://ss64.com/) - Command line reference
+- [Learn Shell](https://learnshell.org/) - Learn Shell
+
+--- 

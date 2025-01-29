@@ -1,17 +1,20 @@
-# Handling Edge Cases & Errors
+# Balancing Precision & Flexibility
 
-## Best Practices
+## Finding the Sweet Spot
 
-- Anticipate potential failure modes
-- Include error handling instructions
-- Validate input data quality
-- Plan for unexpected outputs
-- Use defensive prompting techniques
+- Be precise enough to get desired results
+- Leave room for LLM's capabilities
+- Avoid over-constraining the response
+- Allow for creative solutions
+- Use guardrails when needed
 
 ## Example
 ```bash
-# With error handling
-echo "Review this log file for security incidents. If the file is empty or corrupted, report the issue. If no incidents found, explicitly state that. Log: : $(cat security.log)" | fabric -p ai
+# Too rigid
+echo "Write exactly 5 bullet points about security" | fabric -p ai
+
+# Better balance
+echo "Write a concise security analysis focusing on key risks. Use bullet points." | fabric -p ai
 ```
 
 --- 

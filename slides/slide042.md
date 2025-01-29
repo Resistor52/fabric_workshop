@@ -1,18 +1,17 @@
-# Document Analysis Examples
+# Creating Complete Patterns
 
-## Useful Patterns
-- `analyze_claims`
-- `extract_extraordinary_claims`
-- `extract_insights`
-- `create_cyber_summary`
+## Pattern Development Workflow
 
-## Example Usage
-```bash
-# Extract key claims from a document
-cat threat_report.md | fabric -p analyze_claims
+1. Define the AI's role clearly
+2. Break down the task into steps
+3. Specify output requirements
+4. Include example inputs/outputs
+5. Test and refine
 
-# Create a cybersecurity summary
-cat advisory.md | fabric -p create_cyber_summary
-```
+## Tips for Success
+- Think step-by-step
+- Be explicit about requirements
+- Test with various inputs
+- Document pattern behavior
 
 --- 

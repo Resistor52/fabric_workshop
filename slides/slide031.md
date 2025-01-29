@@ -1,18 +1,10 @@
-# Prompts Deep Dive: Crafting Effective Prompts
+# Troubleshooting Common Issues
 
-## Key Elements
+If API calls fail:
 
-- Be clear and specific in your instructions
-- Break complex tasks into smaller steps
-- Include relevant context and constraints
-- Use consistent formatting and structure
-- Specify the desired output format
+- Verify your `.env` file exists
+- Check your API keys are valid
+- Ensure no extra spaces in `.env`
+- Run `fabric -L` to see if the models are available
 
-## Example
-```bash
-# Less effective
-echo "analyze this: $(cat document.txt)" | fabric -p ai
-
-# More effective
-echo "analyze this technical document and highlight security implications: $(cat document.txt) " | fabric -p ai
-```
+---

@@ -1,21 +1,20 @@
-# Defining Output Instructions
+# Defining Pattern Identity & Purpose
 
-## Essential Elements
+## Key Components
 
-- Specify output format (Markdown, JSON, etc.)
-- Define structure and hierarchy
-- Include formatting rules
-- Provide validation criteria
-- Set quality standards
+- Clear role definition for the AI
+- Specific responsibilities
+- Scope of operations
+- Success criteria
+- Contextual boundaries
 
-## Example Output Section
+## Example Pattern Header
 ```markdown
-# OUTPUT INSTRUCTIONS
-- Output must be in Markdown format
-- Use H2 for main findings
-- List each incident with timestamp
-- Include severity rating (High/Medium/Low)
-- Ensure all IPs are properly formatted
+# IDENTITY and PURPOSE
+You are an AI security log analyzer responsible for 
+identifying potential security incidents in system logs. 
+You meticulously examine each log entry for patterns 
+indicating suspicious activity...
 ```
 
 --- 

@@ -1,15 +1,19 @@
-# Reverse Engineering Fabric Patterns
+# Security Log Analysis
 
+## Relevant Patterns
+- `analyze_logs`
+- `analyze_incident`
+- `create_sigma_rules`
+- `extract_poc`
+
+## Example Usage
 ```bash
-fabric -l # list all patterns
+# Analyze security logs
+cat security.log | fabric -p analyze_logs
 
-ls ~/.config/fabric/patterns/ # Examine the pattern directory
-
-fabric -p extract_wisdom --dry-run # Read the pattern's prompt
-
-fabric -p analyze_threat_report --dry-run > analyze_threat_report.md
-
-nano analyze_threat_report.md  # Edit the pattern
+# Create detection rules
+cat incident.json | fabric -p create_sigma_rules
 ```
+
 
 --- 

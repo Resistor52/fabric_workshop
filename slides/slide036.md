@@ -1,17 +1,18 @@
-# Patterns Deep Dive: Anatomy of a Fabric Pattern
+# Iterative Prompt Refinement
 
-Fabric patterns ARE prompts
+## The Refinement Process
 
-## Core Sections
+- Start with a basic prompt and analyze the output quality
+- Identify areas for improvement
+- Adjust and test incrementally
 
-- IDENTITY and PURPOSE: Defines the AI's role
-- STEPS: Clear instructions for task completion
-- OUTPUT INSTRUCTIONS: Formatting and structure rules
-- INPUT: The data to be processed (typically blank)
+## Example
+```bash
+# Initial attempt
+echo "Check this log file: $(cat security.log)" | fabric -p ai
 
-## Why This Structure Matters
-- Creates consistent, reliable outputs
-- Makes patterns reusable and maintainable
-- Ensures clear communication with the LLM
+# Refined version
+echo "Analyze this log file for failed login attempts, highlighting IP addresses and timestamp patterns: $(cat security.log)" | fabric -p ai
+```
 
 --- 

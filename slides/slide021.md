@@ -1,12 +1,19 @@
-# Understanding Fabric Sessions
+# Mitigating Hallucinations
 
-- When you use the `--session=` parameter, Fabric will use the session file to store the conversation history.
-- This will either create a new session or continue an existing session.
-- The session file is stored in the `~/.config/fabric/sessions` directory.
-- Use `-X` or `--listsessions` to list the sessions.
-- Use `-W` or `--wipesession=` to delete a session.
-- To print the session, use `--printsession`.
-- Output the entire session to the output file using `--output-session`.
-- Specify the output file using  `-o` or `--output`. 
+- Use lower temperature settings (0.0-0.3)
+- Always verify critical information
+- Cross-reference with trusted sources
+- Be especially careful with:
+  - Technical specifications
+  - Historical dates and facts
+  - Citations and references
+  - Security-related information
+
+## Best Practices
+
+- Treat LLM outputs as suggestions, not facts
+- Implement human verification for critical tasks
+- Use system prompts that emphasize accuracy
+- Consider using multiple LLMs for cross-validation
 
 ---

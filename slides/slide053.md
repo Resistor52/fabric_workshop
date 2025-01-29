@@ -1,14 +1,12 @@
-# Getting Help & The FabricCommunity
+# Q&A and Wrap-Up
 
-## Stay Connected to the Fabric Project
+## Key Takeaways
 
-- [Fabric Intro Video](https://youtu.be/wPEyyigh10g)
-- Follow [@danielmiessler](https://x.com/danielmiessler) on Twitter/X
-- Learn more at [danielmiessler.com/](https://danielmiessler.com/)
+- Fabric enhances CLI workflows with LLM capabilities
+- Command chaining multiplies tool effectiveness
+- Integration with VS Code and GitHub streamlines development
+- Security use cases demonstrate practical applications
 
-## Contributing to Fabric
+## Questions?
 
-- How to [report issues or get help](https://github.com/danielmiessler/fabric/issues)   
-- [Contributing guidelines](https://opensource.guide/)
-
----
+--- 

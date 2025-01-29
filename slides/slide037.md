@@ -1,20 +1,17 @@
-# Defining Pattern Identity & Purpose
+# Handling Edge Cases & Errors
 
-## Key Components
+## Best Practices
 
-- Clear role definition for the AI
-- Specific responsibilities
-- Scope of operations
-- Success criteria
-- Contextual boundaries
+- Anticipate potential failure modes
+- Include error handling instructions
+- Validate input data quality
+- Plan for unexpected outputs
+- Use defensive prompting techniques
 
-## Example Pattern Header
-```markdown
-# IDENTITY and PURPOSE
-You are an AI security log analyzer responsible for 
-identifying potential security incidents in system logs. 
-You meticulously examine each log entry for patterns 
-indicating suspicious activity...
+## Example
+```bash
+# With error handling
+echo "Review this log file for security incidents. If the file is empty or corrupted, report the issue. If no incidents found, explicitly state that. Log: : $(cat security.log)" | fabric -p ai
 ```
 
 --- 
