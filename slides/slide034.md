@@ -9,10 +9,10 @@
 ## Example
 ```bash
 # Initial attempt
-echo "Check this log file: $(cat security_log.txt)" | fabric -p ai
+echo "Check this log file: $(cat security.log)" | fabric -p ai
 
 # Refined version
-echo "Analyze this log file for failed login attempts, highlighting IP addresses and timestamp patterns: $(cat security_log.txt)" | fabric -p ai
+echo "Analyze this log file for failed login attempts, highlighting IP addresses and timestamp patterns: $(cat security.log)" | fabric -p ai
 ```
 
 --- 

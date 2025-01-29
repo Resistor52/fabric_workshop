@@ -4,11 +4,11 @@
 
 ```bash
 # Set up pattern directory
-export PATTERN_DIR="~/.config/fabric/patterns"
+export PATTERN_DIR="$HOME/.config/fabric/patterns"
 mkdir -p $PATTERN_DIR/analyze_aws_cloudtrail
 
 # Create the pattern
-echo "Create a pattern for analyzing AWS CloudTrail logs that identifies privilege escalation attempts" | fabric -p create_pattern | tee $PATTERN_DIR/analyze_aws_cloudtrail/system.md
+echo "Analyzing AWS CloudTrail logs that identifies privilege escalation attempts" | fabric -p create_pattern | tee $PATTERN_DIR/analyze_aws_cloudtrail/system.md
 
 # Inspect the pattern
 cat $PATTERN_DIR/analyze_aws_cloudtrail/system.md

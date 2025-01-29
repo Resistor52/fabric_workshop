@@ -11,7 +11,7 @@
 ## Example
 ```bash
 # With error handling
-echo "Review this log file for security incidents. If the file is empty or corrupted, report the issue. If no incidents found, explicitly state that. Log: : $(cat security_log.txt)" | fabric -p ai
+echo "Review this log file for security incidents. If the file is empty or corrupted, report the issue. If no incidents found, explicitly state that. Log: : $(cat security.log)" | fabric -p ai
 ```
 
 --- 

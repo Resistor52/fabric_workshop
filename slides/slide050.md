@@ -2,7 +2,7 @@
 
 ```bash
 # Loop through all patterns
-for pattern in $(fabric -l); do echo "- "$pattern; done
+for pattern in $(fabric -l); do echo "--> "$pattern; done
 
 for pattern in $(fabric -l); do 
     echo -e "\n## "$pattern | tee -a summaries.md;
