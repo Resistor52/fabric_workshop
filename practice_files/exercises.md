@@ -45,11 +45,12 @@ cat architecture.md | fabric -p create_stride_threat_model
 
 ```bash
 # Try different contexts
+cp context-*.md ~/.config/fabric/contexts/  # Move the files
 echo "explain the CIA Triad" | fabric -C context-expert.md -p raw_query
 echo "explain the CIA Triad" | fabric -C context-layperson.md -p raw_query
 ```
 
-## Pattern Analysis and Creation
+## Pattern Analysis 
 
 ```bash
 # Examine pattern contents
@@ -63,10 +64,24 @@ for pattern in $(fabric -l); do
     echo -e "\n## "$pattern | tee -a summaries.md
     fabric -p $pattern --dry-run | fabric -p summarize_prompt | tee -a summaries.md
 done
+```
 
-# Create a new pattern
-echo "Analyzing AWS CloudTrail logs that identifies privilege escalation attempts" | \
-    fabric -p create_pattern | tee $HOME/.config/fabric/patterns/analyze_aws_cloudtrail/system.md
+
+## Create a new pattern
+
+```bash
+# Set up pattern directory
+export PATTERN_DIR="$HOME/.config/fabric/patterns"
+mkdir -p $PATTERN_DIR/analyze_aws_cloudtrail
+
+# Create the pattern
+echo "Analyzing AWS CloudTrail logs that identifies privilege escalation attempts" | fabric -p create_pattern | tee $PATTERN_DIR/analyze_aws_cloudtrail/system.md
+
+# Inspect the pattern
+cat $PATTERN_DIR/analyze_aws_cloudtrail/system.md
+
+# Test the pattern
+cat cloudtrail.log | fabric -p analyze_aws_cloudtrail
 ```
 
 ## Security Analysis Examples
