@@ -13,7 +13,7 @@
 
 - **Standard Error (stderr)**: `2>`
   ```bash
-  fabric -p ai 2> errors.log
+  fabric -p not_a_pattern 2> errors.log
   ```
 
 ## Common Patterns

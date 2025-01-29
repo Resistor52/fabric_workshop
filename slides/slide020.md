@@ -8,7 +8,7 @@
 ## Move the files and try them out:
 
 ```
-cp context-*.md /home/ken/.config/fabric/contexts/  
+cp context-*.md ~/.config/fabric/contexts/  
 
 echo "explain the CIA Traid" | fabric -C context-expert.md -p raw_query
 
