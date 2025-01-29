@@ -1,4 +1,4 @@
- # Codespaces Best Practices
+# Codespaces Best Practices
 
 - Always use environment variables for API keys
 - Do not commit your `.env` file!
