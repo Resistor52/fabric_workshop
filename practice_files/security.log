@@ -1,0 +1,33 @@
+2024-03-15T08:23:15.123Z INFO [OpenVPN] Server started successfully on UDP port 1194
+2024-03-15T08:25:32.456Z INFO [OpenVPN] New client connection from 192.168.1.100:54321
+2024-03-15T08:25:32.567Z DEBUG [OpenVPN] TLS: Initial packet from [AF_INET]192.168.1.100:54321
+2024-03-15T08:25:32.678Z INFO [OpenVPN] 192.168.1.100:54321 VERIFY OK: depth=1, CN=OpenVPN-Client
+2024-03-15T08:25:32.789Z INFO [OpenVPN] 192.168.1.100:54321 VERIFY OK: depth=0, CN=user1
+2024-03-15T08:25:32.890Z INFO [OpenVPN] 192.168.1.100:54321 Connection successful
+
+2024-03-15T09:15:45.123Z WARN [OpenVPN] Oversized TLS handshake packet received from 45.89.123.45:60111
+2024-03-15T09:15:45.234Z ERROR [OpenVPN] Buffer overflow detected in verify_cert_san function
+2024-03-15T09:15:45.345Z ERROR [OpenVPN] Process crashed with SIGSEGV
+2024-03-15T09:15:45.456Z CRITICAL [System] Unexpected privileged process creation: /bin/bash -i
+2024-03-15T09:15:45.567Z ERROR [OpenVPN] Server restarting after crash
+
+2024-03-15T09:16:01.123Z INFO [OpenVPN] Server restarted successfully on UDP port 1194
+2024-03-15T09:17:23.456Z WARN [OpenVPN] Multiple failed connection attempts from 45.89.123.45
+2024-03-15T09:17:45.789Z INFO [Firewall] Blocking IP 45.89.123.45 - too many failed attempts
+
+2024-03-15T10:30:12.345Z INFO [OpenVPN] New client connection from 192.168.1.101:49876
+2024-03-15T10:30:12.456Z DEBUG [OpenVPN] TLS: Initial packet from [AF_INET]192.168.1.101:49876
+2024-03-15T10:30:12.567Z INFO [OpenVPN] 192.168.1.101:49876 VERIFY OK: depth=1, CN=OpenVPN-Client
+2024-03-15T10:30:12.678Z INFO [OpenVPN] 192.168.1.101:49876 VERIFY OK: depth=0, CN=user2
+2024-03-15T10:30:12.789Z INFO [OpenVPN] 192.168.1.101:49876 Connection successful
+
+2024-03-15T11:45:23.123Z WARN [OpenVPN] Oversized TLS handshake packet received from 91.234.56.78:55555
+2024-03-15T11:45:23.234Z ERROR [OpenVPN] Buffer overflow detected in verify_cert_san function
+2024-03-15T11:45:23.345Z ERROR [OpenVPN] Process crashed with SIGSEGV
+2024-03-15T11:45:23.456Z CRITICAL [System] Unexpected privileged process creation: /usr/bin/python3 -c 'import socket,subprocess,os...'
+2024-03-15T11:45:23.567Z ALERT [System] Possible reverse shell detected
+2024-03-15T11:45:23.678Z INFO [Firewall] Emergency blocking IP 91.234.56.78
+
+2024-03-15T11:46:01.123Z INFO [OpenVPN] Server restarted successfully on UDP port 1194
+2024-03-15T11:46:02.234Z INFO [System] Emergency patch CVE-2024-23485 applied
+2024-03-15T11:46:03.345Z INFO [OpenVPN] Server version updated to 2.6.8 

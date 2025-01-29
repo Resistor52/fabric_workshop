@@ -1,0 +1,94 @@
+{
+    "incident_id": "INC-2024-0315-001",
+    "title": "OpenVPN Exploitation Attempts",
+    "status": "Resolved",
+    "severity": "Critical",
+    "detection_time": "2024-03-15T09:15:45.123Z",
+    "resolution_time": "2024-03-15T11:46:03.345Z",
+    "affected_systems": [
+        "vpn-server-prod-01.internal.company.com"
+    ],
+    "attack_vectors": [
+        {
+            "type": "Buffer Overflow",
+            "description": "Exploitation of CVE-2024-23485 via malformed TLS handshake",
+            "technique_id": "T1203",
+            "technique_name": "Exploitation for Client Execution"
+        }
+    ],
+    "malicious_indicators": [
+        {
+            "type": "IP",
+            "value": "45.89.123.45",
+            "first_seen": "2024-03-15T09:15:45.123Z",
+            "confidence": "High",
+            "context": "Initial exploitation attempt"
+        },
+        {
+            "type": "IP",
+            "value": "91.234.56.78",
+            "first_seen": "2024-03-15T11:45:23.123Z",
+            "confidence": "High",
+            "context": "Secondary exploitation attempt"
+        }
+    ],
+    "attack_pattern": [
+        {
+            "timestamp": "2024-03-15T09:15:45.123Z",
+            "event": "Oversized TLS handshake packet received",
+            "source_ip": "45.89.123.45"
+        },
+        {
+            "timestamp": "2024-03-15T09:15:45.234Z",
+            "event": "Buffer overflow in verify_cert_san function",
+            "details": "Stack corruption detected"
+        },
+        {
+            "timestamp": "2024-03-15T09:15:45.456Z",
+            "event": "Privilege escalation",
+            "details": "Unexpected root shell spawned"
+        }
+    ],
+    "mitigation_steps": [
+        {
+            "action": "Block attacker IPs",
+            "status": "Completed",
+            "timestamp": "2024-03-15T09:17:45.789Z"
+        },
+        {
+            "action": "Apply emergency patch",
+            "status": "Completed",
+            "timestamp": "2024-03-15T11:46:02.234Z"
+        },
+        {
+            "action": "Update OpenVPN version",
+            "status": "Completed",
+            "timestamp": "2024-03-15T11:46:03.345Z"
+        }
+    ],
+    "recommended_sigma_rule": {
+        "title": "OpenVPN Buffer Overflow Attempt",
+        "description": "Detects potential exploitation of CVE-2024-23485 in OpenVPN",
+        "status": "experimental",
+        "references": [
+            "https://openvpn.net/security-advisory/2024-23485"
+        ],
+        "logsource": {
+            "product": "openvpn",
+            "service": "openvpn"
+        },
+        "detection": {
+            "selection": {
+                "message|contains": [
+                    "Oversized TLS handshake packet received",
+                    "Buffer overflow detected in verify_cert_san"
+                ]
+            },
+            "condition": "selection"
+        },
+        "falsepositives": [
+            "Legitimate large certificates (rare)"
+        ],
+        "level": "high"
+    }
+} 

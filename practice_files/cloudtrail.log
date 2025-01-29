@@ -1,0 +1,149 @@
+{
+    "Records": [
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "IAMUser",
+                "principalId": "AIDA1234567890EXAMPLE",
+                "arn": "arn:aws:iam::123456789012:user/developer1",
+                "accountId": "123456789012",
+                "userName": "developer1"
+            },
+            "eventTime": "2024-03-15T08:00:00Z",
+            "eventSource": "iam.amazonaws.com",
+            "eventName": "GetUser",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "192.168.1.100",
+            "userAgent": "AWS CLI/2.9.1 Python/3.9.13",
+            "requestParameters": {
+                "userName": "developer1"
+            },
+            "responseElements": null,
+            "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "readOnly": true,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "123456789012"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "IAMUser",
+                "principalId": "AIDA1234567890EXAMPLE",
+                "arn": "arn:aws:iam::123456789012:user/developer1",
+                "accountId": "123456789012",
+                "userName": "developer1"
+            },
+            "eventTime": "2024-03-15T08:05:23Z",
+            "eventSource": "iam.amazonaws.com",
+            "eventName": "CreateAccessKey",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "192.168.1.100",
+            "userAgent": "AWS CLI/2.9.1 Python/3.9.13",
+            "requestParameters": {
+                "userName": "admin"
+            },
+            "errorCode": "AccessDenied",
+            "errorMessage": "User: arn:aws:iam::123456789012:user/developer1 is not authorized to perform: iam:CreateAccessKey on resource: user admin",
+            "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "123456789012"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "IAMUser",
+                "principalId": "AIDA1234567890EXAMPLE",
+                "arn": "arn:aws:iam::123456789012:user/developer1",
+                "accountId": "123456789012",
+                "userName": "developer1"
+            },
+            "eventTime": "2024-03-15T08:10:15Z",
+            "eventSource": "iam.amazonaws.com",
+            "eventName": "AttachUserPolicy",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "192.168.1.100",
+            "userAgent": "AWS CLI/2.9.1 Python/3.9.13",
+            "requestParameters": {
+                "userName": "developer1",
+                "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+            },
+            "errorCode": "AccessDenied",
+            "errorMessage": "User: arn:aws:iam::123456789012:user/developer1 is not authorized to perform: iam:AttachUserPolicy on resource: user developer1",
+            "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+            "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "123456789012"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "IAMUser",
+                "principalId": "AIDA1234567890EXAMPLE",
+                "arn": "arn:aws:iam::123456789012:user/developer1",
+                "accountId": "123456789012",
+                "userName": "developer1",
+                "sessionContext": {
+                    "sessionIssuer": {},
+                    "webIdFederationData": {},
+                    "attributes": {
+                        "mfaAuthenticated": "false",
+                        "creationDate": "2024-03-15T08:15:00Z"
+                    }
+                }
+            },
+            "eventTime": "2024-03-15T08:15:30Z",
+            "eventSource": "sts.amazonaws.com",
+            "eventName": "AssumeRole",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "192.168.1.100",
+            "userAgent": "AWS CLI/2.9.1 Python/3.9.13",
+            "requestParameters": {
+                "roleArn": "arn:aws:iam::123456789012:role/AdminRole",
+                "roleSessionName": "DevSession1"
+            },
+            "errorCode": "AccessDenied",
+            "errorMessage": "User: arn:aws:iam::123456789012:user/developer1 is not authorized to perform: sts:AssumeRole on resource: role AdminRole",
+            "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
+            "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
+            "readOnly": true,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "123456789012"
+        },
+        {
+            "eventVersion": "1.08",
+            "userIdentity": {
+                "type": "IAMUser",
+                "principalId": "AIDA1234567890EXAMPLE",
+                "arn": "arn:aws:iam::123456789012:user/developer1",
+                "accountId": "123456789012",
+                "userName": "developer1"
+            },
+            "eventTime": "2024-03-15T08:20:45Z",
+            "eventSource": "lambda.amazonaws.com",
+            "eventName": "UpdateFunctionCode",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "192.168.1.100",
+            "userAgent": "AWS CLI/2.9.1 Python/3.9.13",
+            "requestParameters": {
+                "functionName": "SecurityAuditFunction",
+                "publish": true
+            },
+            "errorCode": "AccessDenied",
+            "errorMessage": "User: arn:aws:iam::123456789012:user/developer1 is not authorized to perform: lambda:UpdateFunctionCode on resource: function SecurityAuditFunction",
+            "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999",
+            "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE00000",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "123456789012"
+        }
+    ]
+} 

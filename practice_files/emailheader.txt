@@ -1,0 +1,162 @@
+Received: from BY1PR13MB7042.namprd13.prod.outlook.com (::1) by
+ LV8PR13MB6623.namprd13.prod.outlook.com with HTTPS; Wed, 1 Jan 2025 20:17:15
+ +0000
+Received: from BY5PR16CA0013.namprd16.prod.outlook.com (2603:10b6:a03:1a0::26)
+ by BY1PR13MB7042.namprd13.prod.outlook.com (2603:10b6:a03:5aa::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8293.19; Wed, 1 Jan
+ 2025 20:16:28 +0000
+Received: from CO1PEPF000042AC.namprd03.prod.outlook.com
+ (2603:10b6:a03:1a0:cafe::4e) by BY5PR16CA0013.outlook.office365.com
+ (2603:10b6:a03:1a0::26) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8314.11 via Frontend Transport; Wed,
+ 1 Jan 2025 20:16:27 +0000
+Authentication-Results: spf=pass (sender IP is 209.133.239.178)
+ smtp.mailfrom=be3.maropost.com; dkim=pass (signature was verified)
+ header.d=goodlifestylenews.com;dkim=pass (signature was verified)
+ header.d=esp.maropost.com;dmarc=fail action=none
+ header.from=anyhournews.com;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of be3.maropost.com
+ designates 209.133.239.178 as permitted sender)
+ receiver=protection.outlook.com; client-ip=209.133.239.178;
+ helo=mta239178.mp2200.com; pr=C
+Received: from mta239178.mp2200.com (209.133.239.178) by
+ CO1PEPF000042AC.mail.protection.outlook.com (10.167.243.41) with Microsoft
+ SMTP Server id 15.20.8314.11 via Frontend Transport; Wed, 1 Jan 2025 20:16:27
+ +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ s=mp1; d=goodlifestylenews.com; t=1735762587; h=from:subject:date:to:
+ list-unsubscribe:list-unsubscribe-post;
+ bh=jeGuxEzHKYTCA+WNFulfC9pVSK8W/BkIZg73J07hdRs=;
+ b=Aa490fqQZA/Ohx3F1i8BpGU+0QR19hra/PTdOK7asDlMrbJjRYxhbC9Cvcv+M1wXyBy+KJ
+ MsNnFFPnINKLbkv5xMwOXCpTNmxdB+WNg1dlMQNMG00qJ5Zd3fYXCsVy4NmvgKRh8oaGPk
+ fNwAVb7xP+ASpLx7oRFukHY4x1q8cUQ=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ s=mp2024; d=esp.maropost.com; t=1735762587; h=from:subject:date:to:
+ list-unsubscribe:list-unsubscribe-post;
+ bh=jeGuxEzHKYTCA+WNFulfC9pVSK8W/BkIZg73J07hdRs=;
+ b=Irkn8uUpSiVgFnPG5zc+bjZwZ2HAwLJ7OcsNAPEID1XBbY4kbwW/KjEVORMDS9GervD7TR
+ vUcA1UZeXLYeWR9R8T9ctOOUn3dzZjzqO8nMC8qwzIu4poORMIlUK+A6WVBV8tFNZUMimp
+ 55LGXiL10prhqf7lSGoA4WbDGcOh5DQ=
+Received: from <832570-3047-1610@be3.maropost.com> ([209.133.239.178])
+ by us-mailer8 (envelope-from 832570-3047-1610@be3.maropost.com)
+ (Jetsend MTA 0.0.1 with ESMTP; Wed, 01 Jan 2025 20:16:22 +0000
+Return-Path: 832570-3047-1610@be3.maropost.com
+X-EmailSource: mmc
+Date: Wed, 01 Jan 2025 15:16:21 -0500
+From: Any Hour News <news@anyhournews.com>
+Reply-To: news@anyhournews.com
+To: ken@kennethghartman.com
+Message-ID: <30faaf80-aaab-013d-c976-4ab9cafdd6e8@goodlifestylenews.com>
+Subject: The High Cost of Ignoring the Signs
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6775a295b37a9_9ad5481384953";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+List-Unsubscribe: <https://links.goodlifestylenews.com/a/1610/one_click_unsubscribe_via_post/3047/832570/02c94f6a318da659feaa64f3d36ba684ca7a2ecd>,
+ <mailto:832570-3047-1610-209.133.239.178-gmail@abuse.maropost.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-CampaignID: 3047
+X-Campaign-ID: 3047
+X-ContactID: 832570
+X-AccountID: 1610
+X-Binding: 209.133.239.178
+X-DkimDomain: goodlifestylenews.com
+X-DkimSelector: mp1
+X-Feedback-ID: 3047:78:1610
+X-rpcampaign: mpost_3047_78_1610
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Jan 2025 20:16:27.6667
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 6a50d43f-cd0c-4e2e-5e2d-08dd2aa12c3b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: e943ccca-8e10-4f35-86dc-555973af64c0:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ CO1PEPF000042AC:EE_|BY1PR13MB7042:EE_|LV8PR13MB6623:EE_
+X-MS-Exchange-Organization-AuthSource:
+ CO1PEPF000042AC.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 6a50d43f-cd0c-4e2e-5e2d-08dd2aa12c3b
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:209.133.239.178;CTRY:CA;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mta239178.mp2200.com;PTR:mta239178.mp2200.com;CAT:SPOOF;SFTY:9.25;SFS:(13230040)(3092899012)(69100299015)(4022899009)(5073199012)(5062899012)(3072899012)(12012899012)(2092899012)(8096899003)(4076899003);DIR:INB;SFTY:9.25;
+X-Microsoft-Antispam:
+ BCL:8;ARA:13230040|3092899012|69100299015|4022899009|5073199012|5062899012|3072899012|12012899012|2092899012|8096899003|4076899003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Jan 2025 20:16:27.2605
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6a50d43f-cd0c-4e2e-5e2d-08dd2aa12c3b
+X-MS-Exchange-CrossTenant-Id: e943ccca-8e10-4f35-86dc-555973af64c0
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1PEPF000042AC.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY1PR13MB7042
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:48.5606143
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8314.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(910001)(944506478)(944626604)(920097)(930097)(3100021)(140003)(1420198)(1310096);RF:JunkEmail;
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?V18S3B3hLnE4lhlT+4sFjDZmCslM40rS8uEfBSndvHNt5Cv6qqsYgieP4XsN?=
+ =?us-ascii?Q?LM0q3jcK63w6cebjYYQ4VLSEwYOT0ivdsLmTcaUCVFoKoKIn65Eh8ifKsTv8?=
+ =?us-ascii?Q?Ewl1q/Mnry181vGVQLxtTi12WFAvnzvo60jNIhaHJujm4EIqAy3wgUMs/8Pu?=
+ =?us-ascii?Q?zBSjtnxgVGzKoFvXob/zAEX7c3vwnqqFnEFVeGAqxiTUHMrMGaxeK8ylEbLs?=
+ =?us-ascii?Q?Ovb8ryhn3TeS1cFWYdXYM1Tim5ugXjzAiGQQrSsV8ZioGhhO/LW0MhAn1tCN?=
+ =?us-ascii?Q?WuSPy9s1PG5u7Eh7askRghWAq7Aaobbv/MbNmI5ETSoEK2Eoiqa7BF4ZY/wK?=
+ =?us-ascii?Q?SH2MH7lv3uEeK1K+X4RH17OAWYdpSZFKvMR/UxNhGE6GqrT1WjL2V6FEL1yF?=
+ =?us-ascii?Q?eIV2VMUfadPfJ2KE4J74MuLfxejeLfvZMJYlYf6rwTDqUqBwQpWLtsKPd58Y?=
+ =?us-ascii?Q?XCWLDTShjOSoW52bPCuhr0vvOflCtR5zzRbFuYxLe20k/s08rJHoTi/MEDCw?=
+ =?us-ascii?Q?07QazlCylQRPEEmhqs/zP7py6dcw4mFR0voR9nyn1W7xmwDTlp1h2GdqypCV?=
+ =?us-ascii?Q?svXKsdcyZgLPdRvmgy/b62sNAUnGH475OoYw0VZ+UuVex6u/ZG7fTAMxVcy9?=
+ =?us-ascii?Q?n9ww/WW/DKCrwm/H9kleuloZLfSo5uZ3QhZqhuSzf4aGWJesfUd8sFPwP/cm?=
+ =?us-ascii?Q?qnEkVenPtnMAF4GA7cyVlKKDR1CF0WA6jkuV5dI7jf2HMoNCUJZMU8M/S53c?=
+ =?us-ascii?Q?HlWcLQ86ASzSvMGE5CeXltyNleDKBMLny22AQTeFIbtLorUApgEQpiNeWE84?=
+ =?us-ascii?Q?epWZqh1/4h+JkBJ64w2ZNmZwQayRrELnrNVwJim9+RcxEZF3snRzwi8LVxRp?=
+ =?us-ascii?Q?H1OJA1c8R5z9EOZ5Me97jynKXtFxj4bXQDnofjl2MauGljEMgpx7B/7YTMZv?=
+ =?us-ascii?Q?28uIat2jlf0lpaA8zz3rDfvjCY5DuTha8ce/0MFnUyAhc3Pu5Qcq5mQN5xXX?=
+ =?us-ascii?Q?M/P6QgG0yUx9JO19SbmQwWBE6FolCNi3uqi6jAPCiQR6g0UAuqwDcy4dKzu+?=
+ =?us-ascii?Q?s33JbDi+pNtglz9nvsZO2VgIX5qllePvY4JL9Z7RpjwZn3h7CKR4befRSfsO?=
+ =?us-ascii?Q?alJNzsJ8RJxIMqvGJnEd1xgVn3MCuBJTSMiUDNf8yq4IDYtvmK2rXzbLkslb?=
+ =?us-ascii?Q?QIyAA+EZz8yka/g4eXNU2w3vo4A8OtXJgu1ps5MUi5GFPBpq91b9Ezl7avcI?=
+ =?us-ascii?Q?Z601zTudhA5EGZvo+PXTjoJwAKcaL5v2M7ci0SP6auhSHBV0BlxEFoWqxZsN?=
+ =?us-ascii?Q?tLVqhoAUfQOPWNbQfDgpuMvw7gCVUgl+oWw5R8dKMkKfqu1N2HgJHpXgWcFV?=
+ =?us-ascii?Q?9Rb+0MHgplDw/TkLmSQWPdBxSr8EFijaTqoxOKkFIZvGbzSq+eFbKG6LPaZv?=
+ =?us-ascii?Q?Y+8KbaErHDvaufHyFATW29tHKtYpIUf3ozrw+BkhqcdsoVzkr/Yg2R/cjIjK?=
+ =?us-ascii?Q?NO6aRzwajFELI/EtBCZ57ZVYViz9sI5xkhRAAhQ3hRswrGQt5n/VR0s1x79u?=
+ =?us-ascii?Q?pO5/Bh6zCLR2LZ4J81/Rw7H3/aydtPdh1DisJGfMzVkNisaxHOZBLAXlPWv6?=
+ =?us-ascii?Q?zTNbqNFiXnMcvFdDsAwwE0g2bHapTKAJ+C8p2k8Y7xrq0Zbjg15PtUydFkYz?=
+ =?us-ascii?Q?3gSYvIyE/FhqYHSIzZKVPqx4BhCbKAFiUYdFrGnwSdl9oNg2ZYvoVKyqY2oa?=
+ =?us-ascii?Q?4a6cn3eUJafCBggAGo7icIo0P5Rs5bHEMn/AfciV3ppbkcnbR9tZ101CKFuR?=
+ =?us-ascii?Q?OvtPOLKpfRVRGrJlpYLTlGKwEO3qtG2koK2km4QPtULIm+6nsF8ZFg2VVcIk?=
+ =?us-ascii?Q?PwaSkEzg1gU+zEi5J2I4cHchcLQ08bLMFSOpQROmb91ctYH2i0P5BUslFynP?=
+ =?us-ascii?Q?yv9jyup/NmnXqf5n/Bc20aQMs9DtytBmXKbmrIqDz8z9HqWcRBPVORaO9mDy?=
+ =?us-ascii?Q?o0eeR3i3jFQJ+j+pL2lUm6JECuMXIIZtaaKygjG5MCqiqPrHbV32PEgdCcAR?=
+ =?us-ascii?Q?+lX6XCUIgh8uAdxh9WMI+7mdrnT2SaZ6nYSFmiiG4LxYwgXattu5BMYsrJ9j?=
+ =?us-ascii?Q?6SjQ+YPC+K82plMhgYaftTSv7ZUykm8RmhrOqRTf+/qXPRIiMblYySlew0qb?=
+ =?us-ascii?Q?c/A1AeuikLaSOal/dwhdz99DRunUEkac71eFEAhxq/LRsdr33AypCWCEr72L?=
+ =?us-ascii?Q?trW0eMhnKdjAY4BiIR7NJ7PmAzIjAtVHEceQRrOIcqK58AnFCDTnE8vvwDNa?=
+ =?us-ascii?Q?bi13wNKMDXbSXAcF2l4rOYMV5oSKISl+Jf/Wrs7JALxUAraQ5C8FjezWE7NI?=
+ =?us-ascii?Q?4/f8ir0vC5om1kCa06G7ESOI6vYy11DKN3daPNOBmrXwSRWbqma1zceiS44J?=
+ =?us-ascii?Q?EZ/hccmOt7KdjvK7dq0YuHDFPZZ7MOxD1LGGH+aP/ycEhaI/U+jDdL4qkCcN?=
+ =?us-ascii?Q?OjjR4qKOPWHyBh37PsKfEI9BaEBwGBM8N3PobaRO66OdS2J1fTbRu36U3s0/?=
+ =?us-ascii?Q?DSo28XvJWfY0rBM0gDL6OH8ob3W1kNkZ334l+6ccfcL45qPgVVIEGJ1qVQZV?=
+ =?us-ascii?Q?31XRJ2j3uCRoSO0+97tfvt9jKWvxJXkvBVE/BHSU32e0kSt4xyCZeQtEqm/4?=
+ =?us-ascii?Q?T73XSzcs3l3hSSV22VSb4UJ0oi43yZ+BweCOhioX1feNb9nLq+Ak2KP5fOgx?=
+ =?us-ascii?Q?yxhj3kPA7Jhkj8VnM8SePHmiBI4yW8TYQOnnbcBH11AAyX1iBlcRDU5Y3ur5?=
+ =?us-ascii?Q?7QoC9NM1aB0WOjIEYqmvotfR4Wd7r4xx7qyjCu9b0+VPCjhEbTcB+iOvqV86?=
+ =?us-ascii?Q?3Ipr8uL0ZvRl4h8USHoFPakPJtRQY12B+Yqme2aAvL91BImXa893uEWlK0BH?=
+ =?us-ascii?Q?Ps2Pw0GYhuYdfsVzhP8Aj1N3QUeI5zCee6VybUsOTrLLI+CP6qFaPkrYCwcH?=
+ =?us-ascii?Q?6fyQTsGTRFVCDps9aqnI2ZP9QaUKPPZqK1q1qZM6KVj/toRnF/LzDpii1AVw?=
+ =?us-ascii?Q?0r2DRGQBirfOdZXEf356VUjd2rZnjEdP2LWlfUarCGPX24ukfD7+t0LsKdHh?=
+ =?us-ascii?Q?Cty2SA+dDbo3uA5w+3mY8VxVJm6+tvBeNJEN7pG6mx5O6iylbGYF5Mtn1RaG?=
+ =?us-ascii?Q?H304gYHBQ2fgr6h0yc05u50xKOamATwOzdIDOoyijaNhNC+dXdQShW4EP4uF?=
+ =?us-ascii?Q?2fQrCSGnv4Mt6Z44qyaaF/5XOpGkSQkhN5MSJf8YC67gIUqIS6KpkVQMOO0U?=
+ =?us-ascii?Q?PKq5b7Rdc2SL1gvu8jAZKKd30SZ9+Fg0hyhXlhvoHYnXlAOAvVnI5/LvjgBs?=
+ =?us-ascii?Q?sOZKvl2BK++wFHOPB+ABfx1L5DcFuaWz0luyR9ch43S/1LzQYAnTmnSNFeB2?=
+ =?us-ascii?Q?kBqQ2omsSRM=3D?=
